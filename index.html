@@ -13,6 +13,7 @@
 </head>
 
 <body class="bg-dark">
+  
   <main>
     <div class="text-center container">
       <div class="row py-lg-3">
@@ -28,6 +29,24 @@
       <ul class="list-group container" id="lista">
       </ul>
     </div>
+    <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="movieDetail" aria-labelledby="movieDetailLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="movieDetailLabel"></h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p id="movieOverview"></p>
+    <ul id="movieGenres" class="list-inline mb-3"></ul>
+
+    
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Más información
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" id="movieExtra"></ul>
+    </div>
+  </div>
+</div>
   </main>
 
   <footer class="text-muted py-3">
@@ -42,6 +61,7 @@
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

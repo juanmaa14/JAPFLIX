@@ -26,3 +26,10 @@ main {
 .offcanvas-top{
     height: fit-content;
 }
+
+#movieDetail .dropdown {
+  position: absolute; 
+  top: 1rem;          
+  right: 1rem;        
+  z-index: 1055;      
+}
